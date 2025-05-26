@@ -5,38 +5,40 @@ import {
   Facebook,
   Instagram,
   Twitter,
+  
   ArrowRight,
   Calendar,
   Clock,
   User,
   
 } from "lucide-react"
-import AnimatedSection from "@/components/animated-section"
-import TextReveal from "@/components/text-reveal"
+import AnimatedSection from "../../components//animated-section"
+import TextReveal from "../../components//text-reveal"
 
-import BackgroundDecoration from "@/components/background-decoration"
-import ColorfulDivider from "@/components/colorful-divider"
-import { Card, CardContent } from "@/components/ui/card"
+import BackgroundDecoration from "../../components//background-decoration"
+import ColorfulDivider from "../../components//colorful-divider"
+import { Card, CardContent } from "../../components/ui/card"
+
 
 // This would typically come from a database or CMS
 const blogPost = {
   id: 1,
-  title: "Sustainable Fat Loss and Lifestyle",
-  excerpt: " The Truth About Fat Loss After 40: Why It's Not Just About Calories.",
+  title: "Fitness and Health",
+  excerpt: "Strong Over Skinny: Why Muscle Mass Matters More Than You Think.",
   content: `
-    Fat loss is most effectively achieved and sustained through long-term lifestyle changes rather than quick fixes or extreme diets. A balanced approach that includes nutritious eating, regular physical activity, quality sleep, and stress management plays a crucial role in supporting a healthy metabolism and promoting sustainable fat loss. Prioritizing whole, unprocessed foods, staying hydrated, and avoiding excessive sugar and refined carbs can help regulate hunger and energy levels. Consistency, rather than perfection, is key — making gradual, realistic changes to daily habits creates a foundation for lasting results. Ultimately, fat loss is not just about appearance, but about building a healthier, more energized life.  `,
+     Fitness is a key component of overall health, contributing to physical strength, mental well-being, and disease prevention. Regular physical activity helps maintain a healthy weight, strengthens the heart and muscles, improves flexibility and balance, and boosts energy levels. It also supports mental health by reducing stress, anxiety, and depression through the release of mood-enhancing endorphins. Combined with a balanced diet, adequate sleep, and healthy lifestyle choices, consistent exercise promotes long-term wellness and reduces the risk of chronic conditions such as heart disease, diabetes, and obesity. Embracing fitness as a daily habit can significantly enhance both the quality and longevity of life. `,
   date: "May 15, 2023",
   readTime: "8 min read",
   author: "Kara Lydon",
   category: "Mindful Eating",
-  image: "/fat.avif?height=600&width=1200&text=Mindful+Eating+Hero",
+  image: "/fit.jpg?height=600&width=1200&text=Mindful+Eating+Hero",
   tags: ["mindfulness", "eating habits", "wellness", "nutrition", "self-care"],
   likes: 127,
   comments: 23,
 }
 
 
-export default function BlogPostPage5() {
+export default function BlogPostPage3() {
   return (
     <div className="flex min-h-screen flex-col overflow-hidden bg-black-950 text-amber-50">
       <BackgroundDecoration />
@@ -54,7 +56,7 @@ export default function BlogPostPage5() {
             />
           </Link>
         </div>
-        <nav className="hidden md:flex space-x-6">
+<nav className="hidden md:flex space-x-6">
           <Link href="/" className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-700 via-amber-500 to-amber-700 text-xl font-bold transition-colors duration-300"> 
             Home
           </Link>
@@ -78,7 +80,6 @@ export default function BlogPostPage5() {
           
         </div>
       </header>
-
       <main className="flex-1 relative z-10">
         {/* Breadcrumb */}
         <section className="py-6 bg-black-900 border-b border-gold-500/20">
@@ -115,11 +116,11 @@ export default function BlogPostPage5() {
                   {blogPost.category}
                 </span>
                 <TextReveal>
-                  <h1 className="animate-gold-shine text-3xl md:text-5xl font-bold mb-4 block">
-                    {blogPost.title}
-                  </h1>
-                </TextReveal>
-                <p className="text-amber-100 text-lg mb-6 max-w-2xl">{blogPost.excerpt}</p>
+                                 <h1 className="animate-gold-shine text-3xl md:text-5xl font-bold mb-4 block">
+                                   {blogPost.title}
+                                 </h1>
+                               </TextReveal>
+                                <p className="text-amber-100 text-lg mb-6 max-w-2xl">{blogPost.excerpt}</p>
                 <div className="flex items-center space-x-6 text-amber-300">
                   <div className="flex items-center">
                     <User className="h-4 w-4 mr-2" />

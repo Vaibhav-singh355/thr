@@ -2,11 +2,11 @@ import Image from "next/image"
 import Link from "next/link"
 
 import { Facebook, Instagram, Twitter,  ArrowRight } from "lucide-react"
-import AnimatedSection from "@/components/animated-section"
-import TextReveal from "@/components/text-reveal"
-import ScrambleText from "@/components/scramble-text"
+import AnimatedSection from "../../components/animated-section"
+import TextReveal from "../../components//text-reveal"
+import ScrambleText from "../../components//scramble-text"
 
-import BackgroundDecoration from "@/components/background-decoration"
+import BackgroundDecoration from "../../components//background-decoration"
 
 
 export default function AboutPage() {

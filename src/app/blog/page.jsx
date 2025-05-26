@@ -2,12 +2,12 @@ import Image from "next/image"
 import Link from "next/link"
 
 import { Facebook, Instagram, Twitter, ArrowRight, Calendar, Clock } from "lucide-react"
-import AnimatedSection from "@/components/animated-section"
-import TextReveal from "@/components/text-reveal"
+import AnimatedSection from "../../components/animated-section"
+import TextReveal from "../../components/text-reveal"
 
-import BackgroundDecoration from "@/components/background-decoration"
-import ColorfulDivider from "@/components/colorful-divider"
-import { Card, CardContent } from "@/components/ui/card"
+import BackgroundDecoration from "../../components/background-decoration"
+import ColorfulDivider from "../../components/colorful-divider"
+import { Card, CardContent } from "../../components/ui/card"
 
 const blogPosts = [
   {

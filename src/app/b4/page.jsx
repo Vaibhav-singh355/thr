@@ -5,47 +5,47 @@ import {
   Facebook,
   Instagram,
   Twitter,
- 
+  
   ArrowRight,
   Calendar,
   Clock,
   User,
- 
+  
 } from "lucide-react"
-import AnimatedSection from "@/components/animated-section"
-import TextReveal from "@/components/text-reveal"
+import AnimatedSection from "../../components//animated-section"
+import TextReveal from "../../components//text-reveal"
 
-import BackgroundDecoration from "@/components/background-decoration"
-import ColorfulDivider from "@/components/colorful-divider"
-import { Card, CardContent } from "@/components/ui/card"
+import BackgroundDecoration from "../../components//background-decoration"
+import ColorfulDivider from "../../components//colorful-divider"
+import { Card, CardContent } from "../../components/ui/card"
 
 
 // This would typically come from a database or CMS
 const blogPost = {
   id: 1,
-  title: "Fitness and Health",
-  excerpt: "Strong Over Skinny: Why Muscle Mass Matters More Than You Think.",
+  title: " Mind-Body Connection",
+  excerpt: "Cravings, Cortisol & Comfort Food: Understanding Emotional Eating.",
   content: `
-     Fitness is a key component of overall health, contributing to physical strength, mental well-being, and disease prevention. Regular physical activity helps maintain a healthy weight, strengthens the heart and muscles, improves flexibility and balance, and boosts energy levels. It also supports mental health by reducing stress, anxiety, and depression through the release of mood-enhancing endorphins. Combined with a balanced diet, adequate sleep, and healthy lifestyle choices, consistent exercise promotes long-term wellness and reduces the risk of chronic conditions such as heart disease, diabetes, and obesity. Embracing fitness as a daily habit can significantly enhance both the quality and longevity of life. `,
+    The mind and body are deeply interconnected, with each influencing the other in powerful ways. Thoughts, emotions, and mental states can have a direct impact on physical health, while the condition of the body can affect mood, focus, and overall mental well-being. Stress, for example, can lead to physical symptoms like headaches, fatigue, or digestive issues, while regular physical activity and practices like meditation or deep breathing can calm the mind and reduce anxiety. Nurturing both mental and physical health through mindfulness, movement, proper nutrition, and rest creates a balanced state where the mind and body work together for optimal health and resilience. `,
   date: "May 15, 2023",
   readTime: "8 min read",
   author: "Kara Lydon",
   category: "Mindful Eating",
-  image: "/fit.jpg?height=600&width=1200&text=Mindful+Eating+Hero",
+  image: "/mind.png?height=600&width=1200&text=Mindful+Eating+Hero",
   tags: ["mindfulness", "eating habits", "wellness", "nutrition", "self-care"],
   likes: 127,
   comments: 23,
 }
 
 
-export default function BlogPostPage3() {
+export default function BlogPostPage4() {
   return (
     <div className="flex min-h-screen flex-col overflow-hidden bg-black-950 text-amber-50">
       <BackgroundDecoration />
 
       <header className="container mx-auto px-4 py-6 flex justify-between items-center relative z-10">
         <div className="w-64 transition-transform duration-300 hover:scale-105">
-          <Link href="/">
+         <Link href="/">
             <Image
               src="/logo.jpg?height=100&width=260"
               alt="Kara Lydon Nutrition"
@@ -56,7 +56,7 @@ export default function BlogPostPage3() {
             />
           </Link>
         </div>
-<nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex space-x-6">
           <Link href="/" className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-700 via-amber-500 to-amber-700 text-xl font-bold transition-colors duration-300"> 
             Home
           </Link>
@@ -67,6 +67,7 @@ export default function BlogPostPage3() {
             Blog
           </Link>
           </nav>
+
 
         <div className="hidden md:flex items-center space-x-4">
           <Link href="#" aria-label="Facebook" className="social-icon-link">
@@ -115,12 +116,12 @@ export default function BlogPostPage3() {
                 <span className="inline-block px-3 py-1 bg-gold-500 text-black-950 text-sm font-medium rounded-full mb-4">
                   {blogPost.category}
                 </span>
-                <TextReveal>
-                                 <h1 className="animate-gold-shine text-3xl md:text-5xl font-bold mb-4 block">
-                                   {blogPost.title}
-                                 </h1>
-                               </TextReveal>
-                                <p className="text-amber-100 text-lg mb-6 max-w-2xl">{blogPost.excerpt}</p>
+                 <TextReveal>
+                                  <h1 className="animate-gold-shine text-3xl md:text-5xl font-bold mb-4 block">
+                                    {blogPost.title}
+                                  </h1>
+                                </TextReveal>
+                <p className="text-amber-100 text-lg mb-6 max-w-2xl">{blogPost.excerpt}</p>
                 <div className="flex items-center space-x-6 text-amber-300">
                   <div className="flex items-center">
                     <User className="h-4 w-4 mr-2" />
@@ -241,7 +242,7 @@ export default function BlogPostPage3() {
         </AnimatedSection>
       </main>
 
-       <footer className="bg-black-900 py-16 relative z-10 border-t border-[#bfa14a]/20">
+      <footer className="bg-black-900 py-16 relative z-10 border-t border-[#bfa14a]/20">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-44">
             <div>

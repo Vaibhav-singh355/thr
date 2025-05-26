@@ -1,52 +1,50 @@
 import Image from "next/image"
 import Link from "next/link"
 
-
-
 import {
   Facebook,
   Instagram,
   Twitter,
+  
   ArrowRight,
   Calendar,
   Clock,
   User,
   
 } from "lucide-react"
-import AnimatedSection from "@/components/animated-section"
-import TextReveal from "@/components/text-reveal"
+import AnimatedSection from "../../components//animated-section"
+import TextReveal from "../../components//text-reveal"
 
-import BackgroundDecoration from "@/components/background-decoration"
-import ColorfulDivider from "@/components/colorful-divider"
-import { Card, CardContent } from "@/components/ui/card"
-
+import BackgroundDecoration from "../../components//background-decoration"
+import ColorfulDivider from "../../components//colorful-divider"
+import { Card, CardContent } from "../../components/ui/card"
 
 // This would typically come from a database or CMS
 const blogPost = {
   id: 1,
-  title: " Mind-Body Connection",
-  excerpt: "Cravings, Cortisol & Comfort Food: Understanding Emotional Eating.",
+  title: " Women’s Health and Hormones",
+  excerpt: " More Muscle, Less Menopause Mess: Why Strength Training Is Your Best Ally.",
   content: `
-    The mind and body are deeply interconnected, with each influencing the other in powerful ways. Thoughts, emotions, and mental states can have a direct impact on physical health, while the condition of the body can affect mood, focus, and overall mental well-being. Stress, for example, can lead to physical symptoms like headaches, fatigue, or digestive issues, while regular physical activity and practices like meditation or deep breathing can calm the mind and reduce anxiety. Nurturing both mental and physical health through mindfulness, movement, proper nutrition, and rest creates a balanced state where the mind and body work together for optimal health and resilience. `,
+     Hormones play a central role in women’s health, influencing everything from menstrual cycles and fertility to mood, metabolism, and bone health. Key hormones such as estrogen, progesterone, and testosterone must stay in balance for the body to function optimally. Throughout a woman's life — from puberty and pregnancy to perimenopause and menopause — hormonal fluctuations can impact physical and emotional well-being. Factors like nutrition, stress, sleep, and physical activity greatly affect hormonal balance. A healthy lifestyle, rich in whole foods, regular exercise, stress management, and adequate rest, can help support hormone health and reduce the risk of issues like menstrual irregularities, polycystic ovary syndrome (PCOS), and menopausal symptoms.  `,
   date: "May 15, 2023",
   readTime: "8 min read",
   author: "Kara Lydon",
   category: "Mindful Eating",
-  image: "/mind.png?height=600&width=1200&text=Mindful+Eating+Hero",
+  image: "/w.jpg?height=600&width=1200&text=Mindful+Eating+Hero",
   tags: ["mindfulness", "eating habits", "wellness", "nutrition", "self-care"],
   likes: 127,
   comments: 23,
 }
 
 
-export default function BlogPostPage4() {
+export default function BlogPostPage2() {
   return (
     <div className="flex min-h-screen flex-col overflow-hidden bg-black-950 text-amber-50">
       <BackgroundDecoration />
 
       <header className="container mx-auto px-4 py-6 flex justify-between items-center relative z-10">
         <div className="w-64 transition-transform duration-300 hover:scale-105">
-         <Link href="/">
+          <Link href="/">
             <Image
               src="/logo.jpg?height=100&width=260"
               alt="Kara Lydon Nutrition"
@@ -82,6 +80,7 @@ export default function BlogPostPage4() {
           
         </div>
       </header>
+
       <main className="flex-1 relative z-10">
         {/* Breadcrumb */}
         <section className="py-6 bg-black-900 border-b border-gold-500/20">
@@ -117,11 +116,11 @@ export default function BlogPostPage4() {
                 <span className="inline-block px-3 py-1 bg-gold-500 text-black-950 text-sm font-medium rounded-full mb-4">
                   {blogPost.category}
                 </span>
-                 <TextReveal>
-                                  <h1 className="animate-gold-shine text-3xl md:text-5xl font-bold mb-4 block">
-                                    {blogPost.title}
-                                  </h1>
-                                </TextReveal>
+                <TextReveal>
+                                 <h1 className="animate-gold-shine text-3xl md:text-5xl font-bold mb-4 block">
+                                   {blogPost.title}
+                                 </h1>
+                               </TextReveal>
                 <p className="text-amber-100 text-lg mb-6 max-w-2xl">{blogPost.excerpt}</p>
                 <div className="flex items-center space-x-6 text-amber-300">
                   <div className="flex items-center">
@@ -338,6 +337,7 @@ export default function BlogPostPage4() {
           </div>
         </div>
       </footer>
+
     </div>
   )
 }

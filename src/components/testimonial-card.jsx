@@ -2,14 +2,7 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { QuoteIcon } from "lucide-react"
 
-interface TestimonialCardProps {
-  quote: string
-  name: string
-  title: string
-  imageSrc: string
-}
-
-export default function TestimonialCard({ quote, name, title, imageSrc }: TestimonialCardProps) {
+export default function TestimonialCard({ quote, name, title, imageSrc }) {
   return (
     <Card className="border-green-100 shadow-sm">
       <CardContent className="p-6">

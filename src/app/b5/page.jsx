@@ -5,38 +5,38 @@ import {
   Facebook,
   Instagram,
   Twitter,
+  
   ArrowRight,
   Calendar,
   Clock,
   User,
   
 } from "lucide-react"
-import AnimatedSection from "@/components/animated-section"
-import TextReveal from "@/components/text-reveal"
+import AnimatedSection from "../../components//animated-section"
+import TextReveal from "../../components//text-reveal"
 
-import BackgroundDecoration from "@/components/background-decoration"
-import ColorfulDivider from "@/components/colorful-divider"
-import { Card, CardContent } from "@/components/ui/card"
-
+import BackgroundDecoration from "../../components//background-decoration"
+import ColorfulDivider from "../../components//colorful-divider"
+import { Card, CardContent } from "../../components/ui/card"
 // This would typically come from a database or CMS
 const blogPost = {
   id: 1,
-  title: " Women’s Health and Hormones",
-  excerpt: " More Muscle, Less Menopause Mess: Why Strength Training Is Your Best Ally.",
+  title: "Sustainable Fat Loss and Lifestyle",
+  excerpt: " The Truth About Fat Loss After 40: Why It's Not Just About Calories.",
   content: `
-     Hormones play a central role in women’s health, influencing everything from menstrual cycles and fertility to mood, metabolism, and bone health. Key hormones such as estrogen, progesterone, and testosterone must stay in balance for the body to function optimally. Throughout a woman's life — from puberty and pregnancy to perimenopause and menopause — hormonal fluctuations can impact physical and emotional well-being. Factors like nutrition, stress, sleep, and physical activity greatly affect hormonal balance. A healthy lifestyle, rich in whole foods, regular exercise, stress management, and adequate rest, can help support hormone health and reduce the risk of issues like menstrual irregularities, polycystic ovary syndrome (PCOS), and menopausal symptoms.  `,
+    Fat loss is most effectively achieved and sustained through long-term lifestyle changes rather than quick fixes or extreme diets. A balanced approach that includes nutritious eating, regular physical activity, quality sleep, and stress management plays a crucial role in supporting a healthy metabolism and promoting sustainable fat loss. Prioritizing whole, unprocessed foods, staying hydrated, and avoiding excessive sugar and refined carbs can help regulate hunger and energy levels. Consistency, rather than perfection, is key — making gradual, realistic changes to daily habits creates a foundation for lasting results. Ultimately, fat loss is not just about appearance, but about building a healthier, more energized life.  `,
   date: "May 15, 2023",
   readTime: "8 min read",
   author: "Kara Lydon",
   category: "Mindful Eating",
-  image: "/w.jpg?height=600&width=1200&text=Mindful+Eating+Hero",
+  image: "/fat.avif?height=600&width=1200&text=Mindful+Eating+Hero",
   tags: ["mindfulness", "eating habits", "wellness", "nutrition", "self-care"],
   likes: 127,
   comments: 23,
 }
 
 
-export default function BlogPostPage2() {
+export default function BlogPostPage5() {
   return (
     <div className="flex min-h-screen flex-col overflow-hidden bg-black-950 text-amber-50">
       <BackgroundDecoration />
@@ -65,7 +65,6 @@ export default function BlogPostPage2() {
             Blog
           </Link>
           </nav>
-
 
         <div className="hidden md:flex items-center space-x-4">
           <Link href="#" aria-label="Facebook" className="social-icon-link">
@@ -116,10 +115,10 @@ export default function BlogPostPage2() {
                   {blogPost.category}
                 </span>
                 <TextReveal>
-                                 <h1 className="animate-gold-shine text-3xl md:text-5xl font-bold mb-4 block">
-                                   {blogPost.title}
-                                 </h1>
-                               </TextReveal>
+                  <h1 className="animate-gold-shine text-3xl md:text-5xl font-bold mb-4 block">
+                    {blogPost.title}
+                  </h1>
+                </TextReveal>
                 <p className="text-amber-100 text-lg mb-6 max-w-2xl">{blogPost.excerpt}</p>
                 <div className="flex items-center space-x-6 text-amber-300">
                   <div className="flex items-center">
@@ -241,7 +240,7 @@ export default function BlogPostPage2() {
         </AnimatedSection>
       </main>
 
-      <footer className="bg-black-900 py-16 relative z-10 border-t border-[#bfa14a]/20">
+       <footer className="bg-black-900 py-16 relative z-10 border-t border-[#bfa14a]/20">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-44">
             <div>
@@ -336,7 +335,6 @@ export default function BlogPostPage2() {
           </div>
         </div>
       </footer>
-
     </div>
   )
 }
